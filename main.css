@@ -1,0 +1,182 @@
+/* All my CSS, I prefer not to use preprogrammed code*/
+p {
+  margin: 22px
+}
+
+.container .row img{
+  height:14rem;
+  width:14rem;
+  float: right;
+}
+
+.container col-span-6{
+  display: flex;
+}
+
+#picture{
+  position: relative;
+  height : 25rem;
+  width: 25rem;
+  left: 50px;
+}
+
+.social-media a img{
+ position: relative;
+ height: 3rem;
+ width: 3rem;
+ margin: 1rem 2rem 1rem 3rem;
+
+ float: left;
+}
+
+.social-media2 a img{
+ height: 3rem;
+ width: 3rem;
+
+float: left;
+}
+
+#DHSicon {
+  position: relative;
+  float:right;
+  height: 70px;
+  width: 70px;
+  bottom: .5rem;
+}
+
+
+#DHSicon2 {
+  position: relative;
+  float: right;
+  
+  
+
+}
+
+.resume-body{
+  margin-bottom: 5rem;
+}
+
+.aboutme-intro{
+  text-align: center;
+
+}
+
+.aboutme{
+ display: flex;
+  
+}
+
+.aboutme img{
+  position: relative;
+  height: 7rem;
+  width: 7rem;
+  bottom: 17px;
+  
+  float:left;
+  
+}
+
+/* Makes text readable (I hope) */
+.shadows {
+  background-color: rgba(255, 255, 255, .9);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+
+  
+
+  
+}
+
+
+.pclass{
+  position: relative;
+  bottom: 1rem;
+  
+}
+
+
+.jumbotron{
+  text-align: center;
+}
+
+.background-top{
+  text-align: center;
+  
+  color:black;
+}
+
+.button p{
+  color: black;
+  margin: 10px;
+
+}
+
+.button {
+  background-color:rgb(225, 0, 255);
+}
+.background-body{
+  background-color: #404040;
+}
+
+
+
+body{
+  /*Fixed background pot despite scrolling, thank you StackOverflow*/
+  background-image: url("Images/mountain-background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  
+  }
+
+/* Animations start here */
+/* Because javascript is a really garbage langauge. They literally wrote it in 10 days.*/
+/* Probably could be a better animation, but I'm not good with CSS */
+
+  @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+
+.bounce:hover {
+	animation: bounce 1s;
+  
+}
+
+.bounce2:hover {
+	animation: bounce 1s;
+  
+}
+
+.bounce3:hover {
+	animation: bounce 1s;
+  
+}
+
+.social-media2 figure {
+  display: inline-block
+}
+
+/* banned for being too flashy currently, could cause seizures? */
+@keyframes rainbow{
+  0% {color:red; }
+  25% {color:yellow; }
+  50% {color:blue; }
+  75% {color:green; }
+  100% {color:red; }
+}
+
